@@ -1,0 +1,23 @@
+body{
+	background-color: #66ff99;
+	height: 0px;
+}
+
+table {
+	margin: auto;	
+	padding: 0px;
+	width: 600px;
+	height: 600px;
+	margin-top: 50vh;
+	transform: translateY(-50%);
+}
+
+td {
+	width: 30%;
+	height: 30%;
+	background-color: #fff;
+	text-align: center;
+	font-family: helvetica;
+	color: #66ff99;
+	font-size: 7em;
+}

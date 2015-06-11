@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>2048</title>
+
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="animate.css">
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="2048.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div>
+				<h1>2048</h1>
+				<div class="score" id="bestScore">Best Score: 0</div>		
+				<div class="score" id="roundScore">Score: 0</div>	
+			</div>
+				
+			<h3>Join the numbers to get to the 2048 tile!</h3>
+			<button onclick="restart();">New Game</button>
+			<div id="board">
+			</div>
+			<h3>Score doesn't save even though game board does, fix it!</h3>
+		</div>
+
+		<div id="overLay">
+
+		</div>
+
+		<div id="popup">
+				<h1 id="Loser">YOU LOST</h1>
+				<button onclick="restart();" id="overlayButton">Try Again</button>
+
+		</div>
+	</body>
+</html>

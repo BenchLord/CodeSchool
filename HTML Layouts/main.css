@@ -1,0 +1,175 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(http://www.stonefilmsnyc.com/wp-content/uploads/2014/10/1638573.jpg);
+}
+
+#container{
+	margin-left: calc(50% - 480px);
+	width: 960px;
+	background-color: #66FF99;
+	opacity: .9;
+}
+
+header {
+	background-color: #fff;
+	height: 250px;
+}
+
+header div {
+	text-align: center;
+	position: relative;
+	font-size: 50px;
+	padding: 3% 0;
+	width: 30%;
+	margin: auto;
+	top: 50%;
+	background-color: #66ff99;
+	font-family: helvetica;
+	color: white;
+	transform: translateY(-50%);
+}
+
+nav {
+	height: 50px;
+	background-color: #52CC7A;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+
+}
+
+ul li {
+	display: inline-block;
+	width: 20%;
+	height: 50px;
+	float: left;
+}
+
+ul li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	line-height: 50px;
+	font-family: helvetica;
+}
+
+ul li a:hover {
+	background:#42A362;
+
+}
+
+ul li ul {
+	display: none;
+	width: 100%;
+	position: absolute;
+	background-color: #52CC7A;
+}
+
+ul li:hover ul{
+	display: block;
+	position: relative;
+}
+
+ul ul li {
+	float: none;
+	width: 100%;
+}
+
+ul ul ul {
+	left: 50%;
+	z-index: 1;
+	float: left;
+}
+
+ul ul ul li {
+	display: none;
+}
+
+ul ul li:hover ul li{
+	display: block;
+}
+
+main {
+	width: 700px;
+	background-color: white;
+	float: left;
+	min-height: 1032px;
+}
+
+aside {
+	width:260px;
+	background-color: none;
+}
+
+section {
+	margin-left: calc(100px / 3);
+	margin-top: calc(100px / 3);
+	float: left;
+	width: 300px;
+	height: 300px;
+	background-color: #66FF99;
+}
+
+section:last-of-type {
+	margin-bottom: calc(100px / 3);
+}
+
+footer {
+	height: 76px;
+	background-color: #52CC7A;
+	clear: both;
+}
+
+@media screen and (max-width:978px){
+	body{
+		background:none;
+	}
+	aside{
+		display: none;
+		width: 0px;
+	}
+
+	#container {
+		width: 100%;
+		margin: 0px;
+		border: none;
+	}
+
+	main {
+		width: calc(100% - 30px);
+		padding: 15px;
+		margin: 0px;
+		min-height: 0px;
+	}
+
+	section {
+		width: calc(50% - 30px);
+		margin: 15px;
+	}
+
+	section:last-of-type {
+		margin-bottom: 15px;
+	}
+
+	footer {
+	}
+}
+
+@media screen and (max-width:500px){
+	section {
+		width: calc(100% - 30px);
+	}
+
+	ul li {
+		float: none;
+		width: 100%;
+	}
+	nav {
+		height: calc(50px * 5);
+	}
+}

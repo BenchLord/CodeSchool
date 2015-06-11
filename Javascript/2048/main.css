@@ -1,0 +1,173 @@
+body{
+	background: #eee;
+}
+
+h1 {
+	font-family: sans-serif;
+	font-size: 100px;
+	color: #776E64;
+	margin-bottom: 0px;
+	float: left;
+}
+
+.score{
+	float: right;
+	font-size: 20px;
+	line-height: 75px;
+	height: 75px;
+	width: 150px;
+	text-align: center;
+	font-family: helvetica;
+	color: #fff;
+	background-color: #776E64;
+}
+
+#overLay {
+	z-index: 1000;
+	background-color: #000;
+	opacity: .3;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#popup {
+	background-color: #EDE0C8;
+	transform: translateX(-50%);
+	position: absolute;
+	height: 200px;
+	width: 500px;
+	top: 30%;
+	left: 50%;
+	z-index: 1001;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#overlayButton{
+	margin: 0px;
+	margin-top: 10px;
+	width: 460px;
+	margin-right: 20px;
+}
+
+#Loser {
+	padding: 0px;
+	font-size: 90px;
+	margin-top: 15px;
+	float: none;
+}
+
+#roundScore{
+	border-radius: 5px;
+	margin-top: 85px;
+	margin-right: 10px;
+}
+
+#bestScore {
+	border-radius: 5px;
+	margin-top: 85px;
+}
+
+h3 {
+	font-family: sans-serif;
+	color: #776E64;
+	float: left;
+	margin-bottom: 30px;
+}
+
+button {
+	float: right;
+	text-align: center;
+	text-decoration: none;
+	height: 50px;
+	width: 190px;
+	cursor: pointer;
+	background-color: #776E64;
+	font-family: sans-serif;
+	color: #fff;
+	font-size: 20px;
+	border: none;
+	border-radius: 5px; 
+	padding: 0px;
+}
+
+#container{
+	width: 555px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+#board{
+	background-color: #BBADA0;
+	border-radius: 5px;
+	width: 540px;
+	height: 540px;
+	padding: 7.5px;
+	clear: both;
+}
+
+.row {
+	overflow: auto;
+}
+
+.tile {
+	float: left;
+	width: 120px;
+	height: 120px;
+	background-color: #CCC0B3;
+	border-radius: 5px;
+	margin: 7.5px;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 120px;
+}
+
+.tile-2{
+	background-color: #EEE4DA;
+	color: #776E64;
+}
+
+.tile-4{
+	background-color: #EDE0C8;
+	color: #776E64;
+}
+
+.tile-8{
+	background-color: #F1B079;
+	color: #F9F6F2;
+}
+
+.tile-16{
+	background-color: #F59563;
+	color: #F9F6F2;
+}
+
+.tile-32{
+	background-color: #F67C5F;
+	color: #F9F6F2;
+}
+
+.tile-64{
+	background-color: #F65E3B;
+	color: #F9F6F2;
+}
+
+.tile-128{
+	background-color: #EDCF72;
+	color: #F9F6F2;
+}
+
+.tile-256{
+	background-color: #EDCC61;
+	color: #F9F6F2;
+}
+
+.tile-512{
+	background-color: #EDC850;
+	color: #F9F6F2;
+}
