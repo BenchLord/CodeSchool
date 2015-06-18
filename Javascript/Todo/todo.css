@@ -1,0 +1,99 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#todo-list {
+	float: right;
+	width: 70%;
+	height: 100%;
+	font-family: helvetica;
+	overflow: auto;
+}
+
+#todo-form {
+	float: left;
+	width: 30%;
+	height: 100%;
+	background-color: #2574A9;
+	text-align: center;
+	min-width: 420px;
+}
+
+h1{
+	font-family: helvetica;
+	font-size: 100px;
+	color: white;
+}
+
+#input-name {
+	width: 70%;
+	margin-bottom: 10px;
+	border: none;
+	height: 30px;
+	font-family: helvetica;
+	padding: 10px;
+}
+
+.notes {
+	margin-left: 50px;
+	font-size: 15px;
+	text-decoration: none;
+	list-style: none;	
+}
+
+#name:focus {
+	outline: 0;
+}
+
+.todos {
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 20px;
+	text-decoration: none;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+	color: #ccc;
+}
+
+
+#input-notes {
+	min-width: 70%;
+	max-width: 70%;
+	min-height: 200px;
+	max-height: 200px;
+	margin-bottom: 10px;
+	border: none;
+	padding: 10px;
+	font-family: helvetica;
+}
+
+#notes:focus {
+	outline: 0;
+}
+
+button {
+	width: 70%;
+	height: 60px;
+	border: none;
+	font-family: helvetica;
+	background-color: white;
+	color: #2574A9;
+}
+
+button:focus {
+	outline: 0;
+}
+
+
+button:hover{
+	opacity: .75;
+	cursor: pointer;
+}

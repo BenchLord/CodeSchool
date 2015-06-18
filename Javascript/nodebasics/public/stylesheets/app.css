@@ -1,0 +1,32 @@
+*{
+	font-family: 'Avenir', Arial, sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+h1{
+	font-size: 50px;
+	text-align: center;
+}
+
+table {
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+td{
+	text-align: center;
+}
+
+th{
+	width: 200px;
+}
+
+input{
+	margin-bottom: 20px;
+}
+
+.label {
+	font-size: 30px;
+	margin-bottom: 5px;
+}

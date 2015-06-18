@@ -1,0 +1,18 @@
+{
+  "name": "nodebasics",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.12.4",
+    "jade": "^1.11.0",
+    "method-override": "^2.3.3",
+    "morgan": "^1.6.0",
+    "skipper": "^0.5.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brandon Bench",
+  "license": "ISC"
+}

@@ -1,0 +1,21 @@
+extends layout
+
+block title
+	title New Order
+block content
+	h1 Make an Order
+
+	
+	form(method="post" action="/orders")
+		p.label Time
+		input(type="datetime-local" name="order_time")
+		br
+		p.label Name
+		input(type="text" name="order_name")
+		br
+		p.label What
+		input(type="textarea" name="order")
+		br
+		input(type="submit" value="Submit")
+		br
+		a(href="/orders") Back

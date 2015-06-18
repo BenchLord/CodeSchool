@@ -1,0 +1,18 @@
+extends layout
+block title
+	title Edit Order
+block content
+	h1 Edit Order #{id}
+	form(method="post" action="/orders/" + id + "?_method=PUT")
+		p.label Time:
+		input(type="datetime-local" name="order_time" value=order.order_time)
+		br
+		p.label Name:
+		input(type="text" name="order_name" value=order.order_name)
+		br
+		p.label What:
+		input(type="textarea" name="order" value=order.order)
+		br
+		input(type="submit" value="Save")
+
+	a(href="/orders")

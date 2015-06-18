@@ -1,0 +1,17 @@
+extends layout
+
+block title
+	title order #{id}
+
+block content
+	h1 Order: #{id}
+	h3 Name: #{order.order_name}
+	h3 Date/Time: #{order.order_time}
+	h3 Order: #{order.order}
+
+	form(method='post', action='/orders/' + id + '?_method=DELETE' onsubmit='return confirm("Are you sure?")')
+		input(type="submit", value="Delete Order")
+
+	a(href="/orders/" + id + "/edit") Edit Order
+	br
+	a(href="/orders") Orders

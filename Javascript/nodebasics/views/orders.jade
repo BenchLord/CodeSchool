@@ -1,0 +1,18 @@
+extends layout
+
+block title
+	title orders
+block content
+	h1 Orders
+	table
+		tr
+			th ID
+			th Customer Name
+			th Pickup Time
+		each order, orderId in orders
+			tr
+				td
+					a(href="/orders/" + orderId) #{orderId}
+				td= order.order_name
+				td= order.order_time
+	a(href="/orders/new") Create New Order
