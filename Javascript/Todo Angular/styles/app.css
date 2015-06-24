@@ -1,0 +1,14 @@
+*{
+	font-family: 'Avenir', Arial, san-serif;
+}
+
+body {
+	background: #eee
+}
+
+#content {
+	margin: 15px 0;
+	background: #fff;
+	padding-bottom: 20px;
+	border-radius: 10px
+}

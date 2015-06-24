@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+<head>
+
+	<meta charset="utf-8">
+	<title>Todo</title>
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+
+	<script src="javascripts/application.js"></script>
+	<script src="javascripts/list.ctrl.js"></script>
+	<script src="javascripts/form.ctrl.js"></script>
+
+	<script src="javascripts/todo.fct.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/app.css">
+	
+</head>
+<body>
+	<div class="container">
+		<div class="row" id="content">
+
+			<div class="col-xs-6" ng-controller="listCtrl as list">
+				<h1 style="text-align: center;">Todo List</h1>
+				<ul style="list-style: none;">
+					<li ng-repeat="todo in list.todos" style="margin-left: -35px;">
+						<input type="checkbox" ng-model="todo.complete" ng-change="todo.save()">
+
+						<span ng-hide="todo.editing">{{ todo.title }}</span>
+						<input type="text" ng-model="todo.title" ng-show="todo.editing">
+						<span class="pull-right">
+							<a href="" ng-click="todo.edit()"> 
+								<span class="glyphicon glyphicon-pencil" ng-hide="todo.editing"></span>
+								<span class="glyphicon glyphicon-floppy-saved" ng-show="todo.editing"></span>
+							</a>			
+							<a href="" ng-click="todo.remove()">
+								<span class="glyphicon glyphicon-trash">
+							</a>
+						</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-xs-6" ng-controller="formCtrl as form">
+				<h1 style="text-align: center;">New Todo</h1>
+				<form ng-submit="form.addTodo()">
+					<div class="form-group">
+						<label for="newItem-title">Title</label>
+						<input id="newItem-title" type="text" class="form-control" ng-model="form.formData.title">
+					</div>
+					<div class="form-group">
+						<input id="newItem-complete" type="checkbox" ng-model="form.formData.complete">
+						<label for="newItem-complete">Complete</label>
+					</div>
+					<button type="submit" class="btn btn-primary btn-lg btn-block" value="New">Create</button>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
