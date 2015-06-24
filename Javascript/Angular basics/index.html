@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<title>My {{ example }}</title>
+
+	<script src="vendor/jquery.min.js"></script>
+	<script src="vendor/angular.min.js"></script>
+
+	<script src="javascripts/application.js"></script>
+	<script src="javascripts/application.ctrl.js"></script>
+	<script src="javascripts/timer.fct.js"></script>
+</head>
+<body ng-controller="ApplicationCtrl as app">
+	<ng-include src="'templates/basic_input.html'"></ng-include>
+
+	<h1>Timer: {{ app.timerSeconds }}</h1>
+
+	<ng-include src="'templates/cat_images.html'"></ng-include>
+</body>
+</html>
