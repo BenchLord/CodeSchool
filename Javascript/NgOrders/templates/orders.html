@@ -1,0 +1,18 @@
+<h2>All Orders</h2>
+
+<div class="row">
+	<div class="col-xs-8">
+		<a ui-sref="newOrder">Create New Order</a>
+	</div>
+	<div class="col-xs-4">
+		<input type="text" class="form-control" ng-model="ordersVm.search" style="margin-bottom: 20px">
+	</div>
+</div>
+
+
+<div class="list-group">
+	<a ng-repeat="order in ordersVm.orders | filter:ordersVm.search | orderBy:'pickup'" class="list-group-item" ui-sref="singleOrder(order)">
+		{{order.name}}
+		<span class="pull-right">{{order.pickup | date : 'shortTime'}}</span>
+	</a>
+</div>

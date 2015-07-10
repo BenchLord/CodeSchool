@@ -28,8 +28,8 @@
 					<li ng-repeat="todo in list.todos" style="margin-left: -35px;">
 						<input type="checkbox" ng-model="todo.complete" ng-change="todo.save()">
 
-						<span ng-hide="todo.editing">{{ todo.title }}</span>
-						<input type="text" ng-model="todo.title" ng-show="todo.editing">
+						<span ng-class="{strike: todo.complete}" class="todo-item" ng-hide="todo.editing">{{ todo.title }}</span>
+						<input class="editbox form-control" type="text" ng-model="todo.title" ng-show="todo.editing">
 						<span class="pull-right">
 							<a href="" ng-click="todo.edit()"> 
 								<span class="glyphicon glyphicon-pencil" ng-hide="todo.editing"></span>
@@ -48,7 +48,7 @@
 				<form ng-submit="form.addTodo()">
 					<div class="form-group">
 						<label for="newItem-title">Title</label>
-						<input id="newItem-title" type="text" class="form-control" ng-model="form.formData.title">
+						<input id="newItem-title" type="text" class="form-control" ng-model="form.formData.title" required>
 					</div>
 					<div class="form-group">
 						<input id="newItem-complete" type="checkbox" ng-model="form.formData.complete">

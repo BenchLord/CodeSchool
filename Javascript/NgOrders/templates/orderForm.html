@@ -1,0 +1,20 @@
+<h2>New Order</h2>
+
+<p>
+	<a ui-sref="allOrders">All Orders</a>
+</p>
+<form ng-submit="formVm.addOrder()">
+	<div class="form-group">
+		<label for="newOrder-name">Name</label>
+		<input type="text" id="newOrder-name" class="form-control" ng-model="formVm.order.name">
+	</div>
+	<div class="form-group">
+		<label for="newOrder-food">Food</label>
+		<textarea id="newOrder-food" class="form-control" ng-modle="formVm.order.food"></textarea>
+	</div>
+	<div class="form-group">
+		<label for="newOrder-pickup">Pickup Time</label>
+		<input type="time" id="newOrder-pickup" class="form-control" ng-model="formVm.order.pickup">
+	</div>
+	<input type="submit" class="btn btn-primary btn-block" value="Submit">
+</form>
