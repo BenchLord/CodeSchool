@@ -1,0 +1,17 @@
+<h1>Editing Restaurant: {{editCtrl.restaurant.name}} </h1>
+<form ng-submit="editCtrl.saveRestaurant()">
+	<input type="text" name="name" placeholder="{{editCtrl.restaurant.name}}" ng-model="editCtrl.restaurant.name">
+	<br>
+	<input type="text" name="phone" placeholder="{{editCtrl.restaurant.phone}}" ng-model="editCtrl.restaurant.phone">
+	<br>
+	<input type="text" name="type" placeholder="{{editCtrl.restaurant.type}}" ng-model="editCtrl.restaurant.type">
+	<br>
+	<input type="number" name="minPrice" placeholder="{{editCtrl.restaurant.minPrice}}" ng-model="editCtrl.restaurant.minPrice">
+	<br>
+	<input type="number" name="maxPrice" placeholder="{{editCtrl.restaurant.maxPrice}}" ng-model="editCtrl.restaurant.maxPrice">
+	<br>
+	<input type="submit" value="Update">
+</form>
+
+<a ui-sref="detail(editCtrl.restaurant)">Back</a>
+

@@ -1,0 +1,26 @@
+extends ../layout
+
+block content
+	h1 New Restaurant
+	form(action="/restaurants" method="post")
+		p
+			label(for="name") Name: 
+			br
+			input(type="text", name="name")
+		p
+			label(for="phone") Phone: 
+			br
+			input(type="text", name="phone")
+		p
+			label(for="type") Type:
+			br
+			input(type="text", name="type")
+		p Price Range:
+			br
+			label(for="minPrice") Min:
+			input(type="number", step="0.1", name="minPrice")
+			lavel(for="maxPrice") Max:
+			input(type="number", step="0.1", name="maxPrice")
+		p
+			input(type="submit", value="Create")
+		a(href="/restaurants") Back

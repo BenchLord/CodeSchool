@@ -1,0 +1,20 @@
+extends ../layout
+
+block content
+
+	h1= restaurant.name
+	p Phone Number: #{restaurant.phone}
+	p Type of food: #{restaurant.type}
+	p Price Range: $#{restaurant.minPrice} - $#{restaurant.maxPrice} 
+		if restaurant.maxPrice <= 10
+			i Cheap
+		else if restaurant.maxPrice <= 20
+			i Affordable
+		else
+			i Expensive
+	p
+		a(href="/restaurants/edit/#{restaurant._id}") Edit
+	form(method="post" action="/restaurants/#{restaurant._id}?_method=delete")
+		input(type="submit" value="Delete Restaurant")
+	p
+		a(href="/restaurants") All Orders

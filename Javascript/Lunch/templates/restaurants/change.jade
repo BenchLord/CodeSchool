@@ -1,0 +1,26 @@
+extends ../layout
+
+block content
+	h1 Changing Restaurant: #{restaurant.name}
+	form(action="/restaurants/#{restaurant._id}?_method=put" method="post")
+		p
+			label(for="name") Name: 
+			br
+			input(type="text", name="name" value="#{restaurant.name}")
+		p
+			label(for="phone") Phone: 
+			br
+			input(type="text", name="phone" value="#{restaurant.phone}")
+		p
+			label(for="type") Type:
+			br
+			input(type="text", name="type" value="#{restaurant.type}")
+		p Price Range:
+			br
+			label(for="minPrice") Min:
+			input(type="number", step="0.1", name="minPrice" value="#{restaurant.minPrice}")
+			lavel(for="maxPrice") Max:
+			input(type="number", step="0.1", name="maxPrice" value="#{restaurant.maxPrice}")
+		p
+			input(type="submit", value="Update")
+		a(href="/restaurants/#{restaurant._id}") Back

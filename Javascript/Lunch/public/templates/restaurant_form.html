@@ -1,0 +1,15 @@
+<h1>New Restaurant</h1>
+<form ng-submit="formCtrl.addRestaurant()">
+	<input type="text" name="name" placeholder="name" ng-model="formCtrl.newRestaurant.name">
+	<br>
+	<input type="text" name="phone" placeholder="phone" ng-model="formCtrl.newRestaurant.phone">
+	<br>
+	<input type="text" name="type" placeholder="type" ng-model="formCtrl.newRestaurant.type">
+	<br>
+	<input type="number" name="minPrice" placeholder="minPrice" ng-model="formCtrl.newRestaurant.minPrice">
+	<br>
+	<input type="number" name="maxPrice" placeholder="maxPrice" ng-model="formCtrl.newRestaurant.maxPrice">
+	<br>
+	<input type="submit" value="Create">
+</form>
+

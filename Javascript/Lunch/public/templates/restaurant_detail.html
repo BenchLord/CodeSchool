@@ -1,0 +1,7 @@
+<h1>Restuarant: {{detailCtrl.restaurant.name}}</h1>
+<p>Phone: {{detailCtrl.restaurant.phone}}</p>
+<p>Type: {{detailCtrl.restaurant.type}}</p>
+<p>Price Range: ${{detailCtrl.restaurant.minPrice}} - ${{detailCtrl.restaurant.maxPrice}}</p>
+<br>
+<a href='' ng-click="detailCtrl.deleteRestaurant()">Delete</a>
+<a ui-sref="edit(detailCtrl.restaurant)">Edit</a>

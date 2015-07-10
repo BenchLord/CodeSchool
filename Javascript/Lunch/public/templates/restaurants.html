@@ -1,0 +1,11 @@
+<h1>ng Restaurants</h1>
+<button ng-click="restaurantsCtrl.pickRandomRestaurant()">Pick Random Restaurant</button>
+<form ng-submit="restaurantsCtrl.search()">
+	<input type="text" ng-model="restaurantsCtrl.searchIn" placeholder="Search by Restuarant Name">
+	<input type="submit" value="Search">
+</form>
+<div ng-repeat="restaurant in restaurantsCtrl.restaurants">
+	<a ui-sref="detail(restaurant)">{{ restaurant.name }}</a>
+</div>
+<br>
+

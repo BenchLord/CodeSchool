@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+	h1 Listing all Restaurants
+	h3
+		a(href="/restaurants/new") Add a new Restaurant
+	each restaurant in restaurants
+		p
+			a(href="/restaurants/#{restaurant._id}") #{restaurant.name}

@@ -1,0 +1,19 @@
+extends layout
+
+block head
+	script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js")
+	script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.min.js")
+	script(type="text/javascript" src="/javascripts/ngrestaurants.js")
+	script(type="text/javascript" src="/javascripts/ngrestaurants.ctrl.js")
+	script(type="text/javascript" src="/javascripts/ngrestaurant.fct.js")
+	script(type="text/javascript" src="/javascripts/restaurant_form.ctrl.js")
+	script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js")
+	script(type="text/javascript" src="/javascripts/restaurant_detail.ctrl.js")
+	script(type="text/javascript" src="/javascripts/restaurant_edit.ctrl.js")
+
+block content
+	div(ui-view='')
+	p
+		a(ui-sref="list") All Restaurants
+		=' '
+		a(ui-sref="form") New Restaurant
